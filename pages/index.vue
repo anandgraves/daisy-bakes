@@ -1,27 +1,38 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">daisybakes.nl</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+    <section class="position-relative z-index-1 margin-y-xxl">
+      <div class="container max-width-adaptive-xl">
+        <div class="grid">
+          <div class="bg-contrast-lower flex items-center col-6@md order-2@md">
+            <div class="padding-md padding-x-lg@lg padding-y-xxl@lg">
+              <div class="text-component">
+                <h1>Hoe het is begonnen...</h1>
+                <p>
+                  Daisy Bakes is ontstaan toen ik in Parijs met mijn lief bij
+                  een klein bakkertje om de hoek heerlijke mini cakejes had
+                  geproefd. De smaak en gevoel daarvan heeft mij zo verrukt en
+                  is daarna bijgebleven.
+                </p>
+
+                <p>
+                  Terug in Nederland was ik benieuwd of ik ze hier kon vinden.
+                  Maar helaas (of toch niet?) was dat niet het geval en besloot
+                  ze toen maar zelf te maken.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <figure class="col-6@md">
+            <img
+              class="block width-100% height-100% object-cover order-1@md"
+              src="assets/images/simona-sergi-RfUr5P6eVuY-unsplash.jpg"
+              alt="Image description"
+            />
+          </figure>
+        </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
