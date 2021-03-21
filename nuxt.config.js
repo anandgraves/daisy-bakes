@@ -6,7 +6,7 @@ export default {
   head: {
     title: 'daisybakes.nl',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'nl',
     },
     meta: [
       { charset: 'utf-8' },
@@ -29,6 +29,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/style-resources',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -37,9 +38,26 @@ export default {
     '@nuxt/content',
   ],
 
+  styleResources: {
+    scss: ['./assets/_base.scss'],
+  },
+
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  hooks: {
+    render: {
+      errorMiddleware(app) {
+        app.use((error, _req, _res, next) => {
+          if (error) {
+            console.log('Logged in errorMiddleware', error)
+          }
+          next(error)
+        })
+      },
+    },
+  },
 }
