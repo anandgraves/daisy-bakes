@@ -2,6 +2,7 @@
 // File#: _2_flexi-header
 // Usage: codyhouse.co/license
 ;(function () {
+  console.log('flex-header.js')
   var flexHeader = document.getElementsByClassName('js-f-header')
   if (flexHeader.length > 0) {
     var menuTrigger = flexHeader[0].getElementsByClassName(
@@ -52,6 +53,7 @@
     // listen for resize
     var resizingId = false
     window.addEventListener('resize', function () {
+      console.log('resize')
       clearTimeout(resizingId)
       resizingId = setTimeout(doneResizing, 500)
     })

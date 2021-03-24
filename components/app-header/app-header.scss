@@ -115,7 +115,7 @@ Usage: codyhouse.co/license
   display: flex;
   align-items: center; // align icon with text
   color: var(--color-contrast-high);
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-decoration: none;
   padding: var(--space-xs) 0;
 

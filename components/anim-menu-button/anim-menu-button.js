@@ -2,6 +2,7 @@
 // File#: _1_anim-menu-btn
 // Usage: codyhouse.co/license
 ;(function () {
+  console.log('anim-menu-button.js')
   var menuBtns = document.getElementsByClassName('js-anim-menu-btn')
   if (menuBtns.length > 0) {
     for (var i = 0; i < menuBtns.length; i++) {

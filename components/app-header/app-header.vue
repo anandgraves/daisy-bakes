@@ -342,29 +342,6 @@
 <script>
 export default {
   name: 'FlexiHeader',
-  mounted() {
-    // 👈 load the JS code once the component is mounted
-    const animMenuButton = document.createElement('script')
-    animMenuButton.setAttribute(
-      'src',
-      '../anim-menu-button/anim-menu-button.js'
-    ) // 👈 make sure to use the correct path
-    animMenuButton.setAttribute('id', 'anim-menu-button-js')
-
-    document.body.appendChild(animMenuButton)
-
-    // 👈 load the JS code once the component is mounted
-    const frontEnd = document.createElement('script')
-    frontEnd.setAttribute('src', './flexi-header.js') // 👈 make sure to use the correct path
-    frontEnd.setAttribute('id', 'flexi-header-js')
-
-    document.body.appendChild(frontEnd)
-  },
-  destroyed() {
-    // remove the JS code once the component has been destroyed
-    document.getElementById('flexi-header-js').remove()
-    document.getElementById('anim-menu-button-js').remove()
-  },
 }
 </script>
 
