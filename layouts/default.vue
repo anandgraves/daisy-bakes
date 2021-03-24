@@ -22,19 +22,19 @@ export default {
     // https://codyhouse.co/ds/docs/framework#content
     const script = document.createElement('script')
     script.type = 'text/javascript'
+    script.id = 'js-app-header'
     script.onload = this.onScriptLoaded
     script.src = '/util.js'
+
     document.body.appendChild(script)
+  },
+  destroyed() {
+    document.getElementById('js-app-header').remove()
   },
   methods: {
     onScriptLoaded(event = null) {
-      if (event) {
-        console.log('Was added', typeof event, event)
-        animMenuButton()
-        flexiAppHeader()
-      } else {
-        console.log('Already existed')
-      }
+      animMenuButton()
+      flexiAppHeader()
     },
   },
 }
