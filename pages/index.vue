@@ -153,16 +153,7 @@
             <h2>Verbeter jouw Kookvaardigheden</h2>
             <p>Ik houd je op de hoogte van kortingen, tips en recepten.</p>
           </div>
-          <div class="newsletter-input margin-top-sm">
-            <input
-              class="newsletter-input__input"
-              type="text"
-              placeholder="Jouw e-mailadres"
-            />
-            <button class="newsletter-input__btn btn btn--accent">
-              Schrijf Je In
-            </button>
-          </div>
+          <newsletter-input />
           <p class="margin-top-sm">
             Schrijf je in en ontvang nu 15% korting op je eerste aankoop.
           </p>

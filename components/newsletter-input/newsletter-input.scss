@@ -1,0 +1,23 @@
+.newsletter-input {
+  position: relative;
+}
+
+.newsletter-input__input {
+  width: 100%;
+  padding: calc(var(--space-sm) + 0.5rem) var(--space-md);
+  border-radius: 50em;
+  border-width: 0;
+  background-color: hsla(
+    var(--color-contrast-higher-h),
+    var(--color-contrast-higher-s),
+    var(--color-contrast-higher-l),
+    0.075
+  );
+}
+
+.newsletter-input__btn {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+}
