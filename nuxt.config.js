@@ -39,11 +39,7 @@ export default {
   ],
 
   styleResources: {
-    scss: [
-      './assets/base/_breakpoints.scss',
-      './assets/base/_colors.scss',
-      './assets/base/_mixins.scss',
-    ],
+    scss: ['./assets/base/_breakpoints.scss', './assets/base/_mixins.scss'],
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
