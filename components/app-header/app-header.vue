@@ -1,7 +1,7 @@
 <template>
   <header class="f-header js-f-header position-relative">
     <div class="f-header__mobile-content container max-width-lg">
-      <a href="#0" class="f-header__logo">
+      <nuxt-link to="/" class="f-header__logo">
         <svg
           class="app-header__logo"
           width="289"
@@ -153,7 +153,7 @@
             ></path>
           </g>
         </svg>
-      </a>
+      </nuxt-link>
       <button
         class="reset anim-menu-btn js-anim-menu-btn f-header__nav-control js-tab-focus"
         aria-label="Toggle menu"
@@ -167,7 +167,7 @@
     <div class="f-header__nav" role="navigation">
       <div class="f-header__nav-grid justify-between@md container max-width-lg">
         <div class="f-header__nav-logo-wrapper flex-grow flex-basis-0">
-          <a href="#0" class="f-header__logo">
+          <nuxt-link to="/" class="f-header__logo">
             <svg
               class="app-header__logo"
               width="289"
@@ -319,19 +319,25 @@
                 ></path>
               </g>
             </svg>
-          </a>
+          </nuxt-link>
         </div>
         <ul class="f-header__list flex-grow flex-basis-0 justify-center@md">
           <li class="f-header__item">
-            <a href="#0" class="f-header__link js-tab-focus">Producten</a>
+            <nuxt-link to="/producten" class="f-header__link js-tab-focus"
+              >Producten</nuxt-link
+            >
           </li>
           <li class="f-header__item">
-            <a href="#0" class="f-header__link">Over Mij</a>
+            <nuxt-link to="/nieuwsbrief" class="f-header__link"
+              >Nieuwsbrief</nuxt-link
+            >
           </li>
         </ul>
         <ul class="f-header__list flex-grow flex-basis-0 justify-end@md">
           <li class="f-header__item">
-            <a href="#0" class="f-header__btn btn btn--primary">Contact</a>
+            <nuxt-link to="/contact" class="f-header__btn btn btn--primary"
+              >Contact</nuxt-link
+            >
           </li>
         </ul>
       </div>
