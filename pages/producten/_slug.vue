@@ -1,6 +1,6 @@
 <template>
-  <article class="margin-top-lg">
-    <section class="product">
+  <article>
+    <section class="product padding-top-xl padding-bottom-xl">
       <div class="container">
         <div class="grid gap-md">
           <div class="col-6@md col-7@lg">
@@ -19,7 +19,10 @@
             </div>
             <div class="text-component v-space-md margin-y-md">
               <nuxt-content :document="product" />
-              <p class="text-md">€{{ price }}</p>
+              <p>
+                <span class="text-xl">€</span>
+                <span class="text-xl font-bold">{{ price }}</span>
+              </p>
             </div>
 
             <div class="margin-bottom-md">
@@ -46,9 +49,9 @@
             </div>
             <div class="flex gap-xs">
               <label class="form-label sr-only" for="qtyInput">Quantity:</label>
-              <number-input />
+              <form-select />
               <button class="btn btn--primary flex-grow">
-                Bestel via E-mail
+                Bestel via e-mail
               </button>
             </div>
           </div>
@@ -95,3 +98,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+.product {
+  background-color: var(--color-accent);
+}
+</style>
