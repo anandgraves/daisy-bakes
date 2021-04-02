@@ -1,7 +1,7 @@
 <template>
   <div class="select">
     <select class="select__input form-control" name="selectThis">
-      <option value="0">Selecteer aantal</option>
+      <option value="0">Aantal</option>
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>

@@ -37,7 +37,9 @@
     </div>
     <div>
       <div class="container text-center margin-top-md">
-        <a href="#0" class="btn btn--accent">Bekijk Mijn Assortiment :-)</a>
+        <nuxt-link to="/producten" class="btn btn--accent"
+          >Bekijk Mijn Assortiment :-)</nuxt-link
+        >
       </div>
     </div>
     <section class="position-relative z-index-1 margin-y-xxl">
