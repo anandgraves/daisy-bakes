@@ -38,6 +38,7 @@ export default {
 
 .product-overview__grid {
   --min: 22rem;
+  --space: 2rem;
 }
 
 .product-overview__title {
