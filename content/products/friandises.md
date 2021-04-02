@@ -1,7 +1,6 @@
 ---
 id: 123
 title: 'Friandises'
-price: 15
 image: '/images/friandises.jpg'
 slug: 'friandises'
 productOptions:
