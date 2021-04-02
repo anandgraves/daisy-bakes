@@ -1,12 +1,12 @@
 <template>
   <article>
-    <section class="product padding-top-xl padding-bottom-xl">
+    <section class="product padding-top-lg padding-bottom-xl">
       <div class="container">
         <div class="grid gap-md">
           <div class="col-6@md col-7@lg">
-            <figure class="image-zoom js-image-zoom">
+            <figure class="frame frame43">
               <img
-                class="image-zoom__preview js-image-zoom__preview"
+                class="image-zoom__preview"
                 :src="product.image"
                 alt="Preview image description"
               />
@@ -34,10 +34,9 @@
                 >
                   <input
                     :id="`${product.slug}-${index}`"
-                    :ref="`${product.slug}-${index}`"
                     type="radio"
                     :name="product.slug"
-                    :checked="index === 0"
+                    :checked="item.checked"
                     :value="item.price"
                     @change="changeOption($event)"
                   />
