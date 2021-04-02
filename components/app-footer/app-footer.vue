@@ -171,18 +171,31 @@
         <nav class="margin-top-xs">
           <ul class="grid gap-xs text-center text-sm@md">
             <li>
-              <a href="#0" class="main-footer__link">Nutty Cacao Granola</a>
-            </li>
-            <li>
-              <a href="#0" class="main-footer__link">Delicious Bananabread</a>
-            </li>
-            <li>
-              <a href="#0" class="main-footer__link"
-                >Chocolate Indulgence Cake</a
+              <nuxt-link to="/producten/granola" class="main-footer__link"
+                >Nutty Cacao Granola</nuxt-link
               >
             </li>
             <li>
-              <a href="#0" class="main-footer__link">Drunken Plum Cake </a>
+              <nuxt-link to="/producten/bananabread" class="main-footer__link"
+                >Delicious Bananabread</nuxt-link
+              >
+            </li>
+            <li>
+              <nuxt-link
+                to="/producten/chocolate-cake"
+                class="main-footer__link"
+                >Chocolate Indulgence Cake</nuxt-link
+              >
+            </li>
+            <li>
+              <nuxt-link to="/producten/plum-cake" class="main-footer__link"
+                >Drunken Plum Cake</nuxt-link
+              >
+            </li>
+            <li>
+              <nuxt-link to="/producten/friandises" class="main-footer__link"
+                >Friandises</nuxt-link
+              >
             </li>
           </ul>
         </nav>
