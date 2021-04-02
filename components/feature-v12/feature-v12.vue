@@ -11,18 +11,22 @@
             </h1>
             <div class="margin-top-sm">
               <div class="flex flex-wrap gap-sm items-center margin-x-auto">
-                <a href="#0" class="btn btn--primary">Neem Een Kijkje</a>
+                <nuxt-link to="/producten" class="btn btn--primary"
+                  >Neem Een Kijkje</nuxt-link
+                >
               </div>
             </div>
           </div>
         </div>
         <div class="col-7@md">
           <figure class="feature-v12__bg-item">
-            <img
-              class="block width-100%"
-              src="/images/friandises.jpg"
-              alt="Image description"
-            />
+            <nuxt-link to="/producten">
+              <img
+                class="block width-100%"
+                src="/images/friandises.jpg"
+                alt="Image description"
+              />
+            </nuxt-link>
           </figure>
         </div>
       </div>
