@@ -17,4 +17,4 @@ productOptions:
 
 Met deze cake zul je jezelf en je gasten zeker verwennen. Gemaakt met in rum gemarineerde pruimen en natuurlijk amandelmeel. Een aromatische cake die ondanks zijn voorkomen heerlijk luchtig is.
 
-Tip: warm de cake 10 min. op in de voorverwarmde oven, dan proef je de gekarameliseerde suiker in de cake beter. Maar eigenlijk veel te lekker om te delen (vindt mijn zusje dan).
+**TIP**: warm de cake 10 min. op in de voorverwarmde oven, dan proef je de gekarameliseerde suiker in de cake beter. Maar eigenlijk veel te lekker om te delen (vindt mijn zusje dan).

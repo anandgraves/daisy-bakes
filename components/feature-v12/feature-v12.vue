@@ -1,6 +1,6 @@
 <template>
   <section
-    class="feature-v12 feature-v12--top feature-v12--left@md feature-v12--offset-sm feature-v12--offset-xl@md padding-top-xl padding-bottom-xxl"
+    class="feature-v12 feature-v12--top feature-v12--left@md feature-v12--offset-sm feature-v12--offset-xl@md padding-top-lg padding-bottom-xxl"
   >
     <div class="container max-width-adaptive-lg">
       <div class="grid flex-center">
