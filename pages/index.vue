@@ -108,17 +108,15 @@
     </section>
     <section class="padding-y-xxl bg-contrast-lower text-center">
       <div class="container max-width-xs">
-        <form>
-          <div class="text-component">
-            <h2>Verbeter jouw Kookvaardigheden</h2>
-            <p class="margin-bottom-xs">
-              Ik houd je op de hoogte van kortingen, tips en recepten. <br />
-              Schrijf je in en ontvang <strong>nu 10% korting</strong> op je
-              eerste aankoop.
-            </p>
-          </div>
-          <newsletter-input />
-        </form>
+        <div class="text-component">
+          <h2>Verbeter jouw Kookvaardigheden</h2>
+          <p class="margin-bottom-xs">
+            Ik houd je op de hoogte van kortingen, tips en recepten. <br />
+            Schrijf je in en ontvang <strong>nu 10% korting</strong> op je
+            eerste aankoop.
+          </p>
+        </div>
+        <newsletter-input />
       </div>
     </section>
   </div>
