@@ -111,12 +111,13 @@
         <form>
           <div class="text-component">
             <h2>Verbeter jouw Kookvaardigheden</h2>
-            <p>Ik houd je op de hoogte van kortingen, tips en recepten.</p>
+            <p class="margin-bottom-xs">
+              Ik houd je op de hoogte van kortingen, tips en recepten. <br />
+              Schrijf je in en ontvang <strong>nu 10% korting</strong> op je
+              eerste aankoop.
+            </p>
           </div>
           <newsletter-input />
-          <p class="margin-top-sm">
-            Schrijf je in en ontvang nu 15% korting op je eerste aankoop.
-          </p>
         </form>
       </div>
     </section>
