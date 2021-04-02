@@ -4,14 +4,16 @@
       <div class="container">
         <div class="grid gap-md">
           <div class="col-6@md col-7@lg">
-            <figure class="frame frame43">
-              <img
-                class="image-zoom__preview"
-                :src="product.image"
-                alt="Preview image description"
-              />
-              <figcaption class="sr-only">Image Caption</figcaption>
-            </figure>
+            <nuxt-link to="/producten">
+              <figure class="frame frame43">
+                <img
+                  class="image-zoom__preview"
+                  :src="product.image"
+                  alt="Preview image description"
+                />
+                <figcaption class="sr-only">Image Caption</figcaption>
+              </figure>
+            </nuxt-link>
           </div>
           <div class="col-6@md col-5@lg">
             <div class="margin-bottom-xs">
