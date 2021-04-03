@@ -1,6 +1,6 @@
 <template>
   <article>
-    <section class="product padding-top-lg padding-bottom-xl">
+    <section class="product padding-top-lg padding-bottom-xxl">
       <div class="container">
         <div class="grid gap-md">
           <div class="col-6@md col-7@lg">
