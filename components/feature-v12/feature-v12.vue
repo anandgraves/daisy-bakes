@@ -20,19 +20,38 @@
         </div>
         <div class="col-7@md">
           <figure class="feature-v12__bg-item">
-            <nuxt-link to="/producten">
-              <img
-                class="block width-100%"
-                src="/images/friandises.jpg"
-                alt="Image description"
-              />
-            </nuxt-link>
+            <div class="frame frame43">
+              <nuxt-link to="/producten">
+                <cld-image
+                  :cloud-name="cloudName"
+                  public-id="friandises-set2_k0nj07"
+                  fetchFormat="auto"
+                  aspectRatio="1.333"
+                  crop="fill"
+                  responsive
+                  quality="65"
+                  loading="lazy"
+                  secure="true"
+                  class="block width-100%"
+                />
+              </nuxt-link>
+            </div>
           </figure>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  computed: {
+    cloudName() {
+      return process.env.cloudinaryCloudName
+    },
+  },
+}
+</script>
 
 <style lang="scss">
 @import 'feature-v12';

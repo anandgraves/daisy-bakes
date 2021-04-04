@@ -1,7 +1,10 @@
 ---
-id: 123
+id: friandises-set2_k0nj07
 title: 'Friandises'
-image: '/images/friandises.jpg'
+images:
+  - src: 'https://res.cloudinary.com/daisybakes/image/upload/c_scale,dpr_1.0,w_600/f_auto,q_65/friandises-set2_k0nj07'
+    alt: 'Friandises'
+image: https://res.cloudinary.com/daisybakes/image/upload/v1617434593/friandises-set2_k0nj07.jpg
 slug: 'friandises'
 productOptions:
   - title: 24x small size

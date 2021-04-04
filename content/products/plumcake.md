@@ -1,7 +1,8 @@
 ---
-id: 834
+id: pruimencake_zl1xax
 title: Drunken Plum Cake
-image: '/images/drunken-plum-cake-daisy-bakes.jpg'
+image: https://res.cloudinary.com/daisybakes/image/upload/v1617434635/pruimencake_zl1xax.jpg
+imageGravity: south
 slug: plum-cake
 productOptions:
   - title: Ø 10 cm

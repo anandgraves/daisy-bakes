@@ -1,7 +1,7 @@
 ---
-id: 567
+id: chocoladetaart_ykngat
 title: 'Chocolate Indulgence Cake'
-image: '/images/chocolate-cake-daisy-bakes.jpg'
+image: https://res.cloudinary.com/daisybakes/image/upload/v1617443189/chocoladetaart_ykngat.jpg
 slug: 'chocolate-cake'
 productOptions:
   - title: Ø 10 cm

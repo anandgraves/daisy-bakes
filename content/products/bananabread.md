@@ -1,7 +1,7 @@
 ---
-id: 124
+id: bananenbrood_nbsdnc
 title: Healthy & Delicious Bananabread
-image: '/images/bananenbrood-daisy-bakes.jpg'
+image: https://res.cloudinary.com/daisybakes/image/upload/v1617434488/bananenbrood_nbsdnc.jpg
 slug: bananabread
 productOptions:
   - title: 16,5 cm x 5,5 cm

@@ -1,7 +1,7 @@
 ---
-id: 456
+id: granola_wj6rnv
 title: Nutty Cacao Granola
-image: '/images/granola-daisy-bakes.jpg'
+image: https://res.cloudinary.com/daisybakes/image/upload/v1617434529/granola_wj6rnv.jpg
 slug: granola
 productOptions:
   - title: 250gr

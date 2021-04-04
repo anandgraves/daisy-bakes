@@ -6,9 +6,17 @@
           <div class="col-6@md col-7@lg">
             <nuxt-link to="/producten">
               <figure class="frame frame43">
-                <img
-                  class="image-zoom__preview"
-                  :src="product.image"
+                <cld-image
+                  :cloud-name="cloudName"
+                  :public-id="product.id"
+                  aspectRatio="1.333"
+                  crop="fill"
+                  :gravity="product.imageGravity"
+                  fetchFormat="auto"
+                  responsive
+                  quality="65"
+                  loading="lazy"
+                  secure="true"
                   alt="Preview image description"
                 />
                 <figcaption class="sr-only">Image Caption</figcaption>
@@ -84,6 +92,11 @@ export default {
     return {
       price: null,
     }
+  },
+  computed: {
+    cloudName() {
+      return process.env.cloudinaryCloudName
+    },
   },
   mounted() {
     this.product.productOptions.forEach((item) => {

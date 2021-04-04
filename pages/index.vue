@@ -91,20 +91,22 @@
             </div>
           </div>
           <figure class="col-6@md">
-            <cld-image
-              :cloud-name="cloudName"
-              public-id="simona-sergi-RfUr5P6eVuY-unsplash_kclmzs"
-              aspect
-              fetchFormat="auto"
-              aspectRatio="1.0"
-              crop="lfill"
-              responsive
-              quality="65"
-              loading="lazy"
-              secure="true"
-              class="block width-100% height-100% object-cover order-1@md"
-              alt="Photo by Simona Sergi on https://unsplash.com/@i_am_simoesse"
-            />
+            <div class="frame frame-square">
+              <cld-image
+                :cloud-name="cloudName"
+                public-id="simona-sergi-RfUr5P6eVuY-unsplash_kclmzs"
+                aspect
+                fetchFormat="auto"
+                aspectRatio="1.0"
+                crop="lfill"
+                responsive
+                quality="65"
+                loading="lazy"
+                secure="true"
+                class="block width-100% height-100% object-cover order-1@md"
+                alt="Photo by Simona Sergi on https://unsplash.com/@i_am_simoesse"
+              />
+            </div>
           </figure>
         </div>
       </div>
