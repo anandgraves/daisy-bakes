@@ -2,6 +2,10 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  env: {
+    cloudinaryCloudName: process.env.CLOUDINARY_CLOUDNAME,
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'daisybakes.nl',
@@ -36,7 +40,14 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://cloudinary.nuxtjs.org
+    '@nuxtjs/cloudinary',
   ],
+
+  cloudinary: {
+    cloudName: process.env.CLOUDINARY_CLOUDNAME,
+    useComponent: true,
+  },
 
   styleResources: {
     scss: ['./assets/base/_breakpoints.scss', './assets/base/_mixins.scss'],

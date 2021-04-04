@@ -9,7 +9,19 @@
             class="product-overview__link"
           >
             <div class="frame frame43">
-              <img :src="product.image" alt="" />
+              <cld-image
+                :cloud-name="cloudName"
+                :public-id="product.id"
+                aspectRatio="1.333"
+                crop="fill"
+                fetchFormat="auto"
+                :gravity="product.imageGravity"
+                responsive
+                quality="65"
+                loading="lazy"
+                secure="true"
+                class="block"
+              />
             </div>
             <div class="product-overview__title">{{ product.title }}</div>
           </nuxt-link>
@@ -27,6 +39,11 @@ export default {
     return {
       products,
     }
+  },
+  computed: {
+    cloudName() {
+      return process.env.cloudinaryCloudName
+    },
   },
 }
 </script>

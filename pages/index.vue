@@ -10,31 +10,58 @@
         </div>
       </div>
     </div>
-    <div class="switcher">
-      <div>
+    <nuxt-link to="/producten">
+      <div class="switcher">
         <div>
-          <a href="#">
+          <div>
             <div class="frame frame-square">
-              <img src="/images/bananenbrood-daisy-bakes.jpg" alt="" />
+              <cld-image
+                :cloud-name="cloudName"
+                public-id="chocoladetaart_ykngat"
+                fetchFormat="auto"
+                crop="fill"
+                aspectRatio="1.0"
+                responsive
+                quality="65"
+                loading="lazy"
+                secure="true"
+              />
             </div>
-          </a>
-        </div>
-        <div>
-          <a href="#">
+          </div>
+          <div>
             <div class="frame frame-square">
-              <img src="/images/friandise-spotlight.jpg" alt="" />
+              <cld-image
+                :cloud-name="cloudName"
+                public-id="friandise-single_qgng10"
+                fetchFormat="auto"
+                crop="fill"
+                aspectRatio="1.0"
+                responsive
+                quality="65"
+                loading="lazy"
+                secure="true"
+              />
             </div>
-          </a>
-        </div>
-        <div>
-          <a href="#">
+          </div>
+          <div>
             <div class="frame frame-square">
-              <img src="/images/drunken-plum-cake-daisy-bakes.jpg" alt="" />
+              <cld-image
+                :cloud-name="cloudName"
+                public-id="pruimencake_zl1xax"
+                fetchFormat="auto"
+                crop="fill"
+                aspectRatio="1.0"
+                gravity="south"
+                responsive
+                quality="65"
+                loading="lazy"
+                secure="true"
+              />
             </div>
-          </a>
+          </div>
         </div>
       </div>
-    </div>
+    </nuxt-link>
     <div>
       <div class="container text-center margin-top-md">
         <nuxt-link to="/producten" class="btn btn--accent"
@@ -46,7 +73,7 @@
       <div class="container max-width-adaptive-xl">
         <div class="grid">
           <div class="bg-contrast-lower flex items-center col-6@md order-2@md">
-            <div class="padding-md padding-x-lg@lg padding-y-xxl@lg">
+            <div class="padding-md padding-x-lg@lg padding-y-lg@lg">
               <div class="text-component">
                 <h1>Hoe het is begonnen...</h1>
                 <p>
@@ -64,11 +91,22 @@
             </div>
           </div>
           <figure class="col-6@md">
-            <img
-              class="block width-100% height-100% object-cover order-1@md"
-              src="/images/simona-sergi-RfUr5P6eVuY-unsplash.jpg"
-              alt="Photo by Simona Sergi on https://unsplash.com/@i_am_simoesse"
-            />
+            <div class="frame frame-square">
+              <cld-image
+                :cloud-name="cloudName"
+                public-id="simona-sergi-RfUr5P6eVuY-unsplash_kclmzs"
+                aspect
+                fetchFormat="auto"
+                aspectRatio="1.0"
+                crop="lfill"
+                responsive
+                quality="65"
+                loading="lazy"
+                secure="true"
+                class="block width-100% height-100% object-cover order-1@md"
+                alt="Photo by Simona Sergi on https://unsplash.com/@i_am_simoesse"
+              />
+            </div>
           </figure>
         </div>
       </div>
@@ -106,16 +144,14 @@
         </div>
       </div>
     </section>
-    <section class="padding-y-xxl bg-contrast-lower text-center">
+    <section class="padding-y-xxl bg-accent-dark text-center">
       <div class="container max-width-xs">
-        <div class="text-component">
-          <h2>Verbeter jouw Kookvaardigheden</h2>
-          <p class="margin-bottom-xs">
-            Ik houd je op de hoogte van kortingen, tips en recepten. <br />
-            Schrijf je in en ontvang <strong>nu 10% korting</strong> op je
-            eerste aankoop.
-          </p>
-        </div>
+        <h2 class="margin-bottom-sm">Verbeter jouw Kookvaardigheden</h2>
+        <p class="margin-bottom-md">
+          Ik houd je op de hoogte van kortingen, tips en recepten. <br />
+          Schrijf je in en ontvang <strong>nu 10% korting</strong> op je eerste
+          aankoop.
+        </p>
         <newsletter-input />
       </div>
     </section>
@@ -123,5 +159,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+  computed: {
+    cloudName() {
+      return process.env.cloudinaryCloudName
+    },
+  },
+}
 </script>
