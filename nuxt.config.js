@@ -2,10 +2,6 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  server: {
-    host: '0.0.0.0',
-  },
-
   env: {
     cloudinaryCloudName: process.env.CLOUDINARY_CLOUDNAME,
   },
