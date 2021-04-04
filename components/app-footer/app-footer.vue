@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="main-footer position-relative z-index-1 padding-top-xl padding-bottom-md"
+    class="main-footer position-relative z-index-1 padding-top-xl padding-bottom-md bg-contrast-lower"
   >
     <div class="container max-width-lg">
       <div class="text-center">
@@ -432,7 +432,7 @@
             </li>
             <li>
               <nuxt-link to="/producten/bananabread" class="main-footer__link"
-                >Delicious Bananabread</nuxt-link
+                >Delicious Banana Bread</nuxt-link
               >
             </li>
             <li>
