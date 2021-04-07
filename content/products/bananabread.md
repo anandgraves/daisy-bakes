@@ -1,6 +1,6 @@
 ---
 id: bananenbrood_nbsdnc
-title: Healthy & Delicious Bananabread
+title: Healthy and Delicious Bananabread
 image: https://res.cloudinary.com/daisybakes/image/upload/v1617434488/bananenbrood_nbsdnc.jpg
 slug: bananabread
 productOptions:
