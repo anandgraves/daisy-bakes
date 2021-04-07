@@ -22,18 +22,20 @@
           <figure class="feature-v12__bg-item">
             <div class="frame frame43">
               <nuxt-link to="/producten">
-                <cld-image
-                  :cloud-name="cloudName"
-                  public-id="friandises-set2_k0nj07"
-                  fetchFormat="auto"
-                  aspectRatio="1.333"
-                  crop="fill"
-                  responsive
-                  quality="65"
-                  loading="lazy"
-                  secure="true"
-                  class="block width-100%"
-                />
+                <client-only>
+                  <cld-image
+                    :cloud-name="cloudName"
+                    public-id="friandises-set2_k0nj07"
+                    fetchFormat="auto"
+                    aspectRatio="1.333"
+                    crop="fill"
+                    responsive
+                    quality="65"
+                    loading="lazy"
+                    secure="true"
+                    class="block width-100%"
+                  />
+                </client-only>
               </nuxt-link>
             </div>
           </figure>
