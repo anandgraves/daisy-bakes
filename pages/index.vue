@@ -15,48 +15,54 @@
         <div>
           <div>
             <div class="frame frame-square">
-              <cld-image
-                :cloud-name="cloudName"
-                public-id="chocoladetaart_ykngat"
-                fetchFormat="auto"
-                crop="fill"
-                aspectRatio="1.0"
-                responsive
-                quality="65"
-                loading="lazy"
-                secure="true"
-              />
+              <client-only>
+                <cld-image
+                  :cloud-name="cloudName"
+                  public-id="chocoladetaart_ykngat"
+                  fetchFormat="auto"
+                  crop="fill"
+                  aspectRatio="1.0"
+                  responsive
+                  quality="65"
+                  loading="lazy"
+                  secure="true"
+                />
+              </client-only>
             </div>
           </div>
           <div>
             <div class="frame frame-square">
-              <cld-image
-                :cloud-name="cloudName"
-                public-id="friandise-single_qgng10"
-                fetchFormat="auto"
-                crop="fill"
-                aspectRatio="1.0"
-                responsive
-                quality="65"
-                loading="lazy"
-                secure="true"
-              />
+              <client-only>
+                <cld-image
+                  :cloud-name="cloudName"
+                  public-id="friandise-single_qgng10"
+                  fetchFormat="auto"
+                  crop="fill"
+                  aspectRatio="1.0"
+                  responsive
+                  quality="65"
+                  loading="lazy"
+                  secure="true"
+                />
+              </client-only>
             </div>
           </div>
           <div>
             <div class="frame frame-square">
-              <cld-image
-                :cloud-name="cloudName"
-                public-id="pruimencake_zl1xax"
-                fetchFormat="auto"
-                crop="fill"
-                aspectRatio="1.0"
-                gravity="south"
-                responsive
-                quality="65"
-                loading="lazy"
-                secure="true"
-              />
+              <client-only>
+                <cld-image
+                  :cloud-name="cloudName"
+                  public-id="pruimencake_zl1xax"
+                  fetchFormat="auto"
+                  crop="fill"
+                  aspectRatio="1.0"
+                  gravity="south"
+                  responsive
+                  quality="65"
+                  loading="lazy"
+                  secure="true"
+                />
+              </client-only>
             </div>
           </div>
         </div>
@@ -92,20 +98,22 @@
           </div>
           <figure class="col-6@md">
             <div class="frame frame-square">
-              <cld-image
-                :cloud-name="cloudName"
-                public-id="simona-sergi-RfUr5P6eVuY-unsplash_kclmzs"
-                aspect
-                fetchFormat="auto"
-                aspectRatio="1.0"
-                crop="lfill"
-                responsive
-                quality="65"
-                loading="lazy"
-                secure="true"
-                class="block width-100% height-100% object-cover order-1@md"
-                alt="Photo by Simona Sergi on https://unsplash.com/@i_am_simoesse"
-              />
+              <client-only>
+                <cld-image
+                  :cloud-name="cloudName"
+                  public-id="simona-sergi-RfUr5P6eVuY-unsplash_kclmzs"
+                  aspect
+                  fetchFormat="auto"
+                  aspectRatio="1.0"
+                  crop="lfill"
+                  responsive
+                  quality="65"
+                  loading="lazy"
+                  secure="true"
+                  class="block width-100% height-100% object-cover order-1@md"
+                  alt="Photo by Simona Sergi on https://unsplash.com/@i_am_simoesse"
+                />
+              </client-only>
             </div>
           </figure>
         </div>

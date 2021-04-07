@@ -9,19 +9,21 @@
             class="product-overview__link"
           >
             <div class="frame frame43">
-              <cld-image
-                :cloud-name="cloudName"
-                :public-id="product.id"
-                aspectRatio="1.333"
-                crop="fill"
-                fetchFormat="auto"
-                :gravity="product.imageGravity"
-                responsive
-                quality="65"
-                loading="lazy"
-                secure="true"
-                class="block"
-              />
+              <client-only>
+                <cld-image
+                  :cloud-name="cloudName"
+                  :public-id="product.id"
+                  aspectRatio="1.333"
+                  crop="fill"
+                  fetchFormat="auto"
+                  :gravity="product.imageGravity"
+                  responsive
+                  quality="65"
+                  loading="lazy"
+                  secure="true"
+                  class="block"
+                />
+              </client-only>
             </div>
             <div class="product-overview__title">{{ product.title }}</div>
           </nuxt-link>
