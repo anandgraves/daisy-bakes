@@ -8,7 +8,7 @@ productOptions:
     price: 15
     checked: false
   - title: Ø 18 cm
-    price: 27,50
+    price: 27.50
     checked: true
   - title: Ø 28 cm
     price: 40

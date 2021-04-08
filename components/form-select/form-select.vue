@@ -1,17 +1,12 @@
 <template>
   <div class="select">
-    <select class="select__input form-control" name="selectThis">
-      <option value="0">Aantal</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
+    <select
+      class="select__input form-control"
+      name="selectThis"
+      @change="$emit('change', $event.target.value)"
+    >
+      <option value="" selected disabled>Aantal</option>
+      <option v-for="item in 10" :key="item" :value="item">{{ item }}</option>
     </select>
     <svg class="icon select__icon" aria-hidden="true" viewBox="0 0 16 16">
       <g stroke-width="1" stroke="currentColor">

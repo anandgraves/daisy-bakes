@@ -27,14 +27,11 @@
           </div>
           <div class="col-6@md col-5@lg">
             <div class="margin-bottom-xs">
-              <h1>{{ product.title }}</h1>
+              <h1>{{ productTitle }}</h1>
             </div>
             <div class="text-component v-space-md margin-y-md">
               <nuxt-content :document="product" />
-              <p>
-                <span class="text-xl">€</span>
-                <span class="text-xl font-bold">{{ price }}</span>
-              </p>
+              <p class="text-xl font-bold">{{ moneyFormat(price) }}</p>
             </div>
 
             <div class="margin-bottom-md">
@@ -50,7 +47,7 @@
                     :name="product.slug"
                     :checked="item.checked"
                     :value="item.price"
-                    @change="changeOption($event)"
+                    @change="changeOption"
                   />
                   <label class="btns__btn" :for="`${product.slug}-${index}`">{{
                     item.title
@@ -60,10 +57,10 @@
             </div>
             <div class="flex gap-xs">
               <label class="form-label sr-only" for="qtyInput">Quantity:</label>
-              <form-select />
-              <button class="btn btn--primary flex-grow">
+              <form-select @change="getNumberOfProducts($event)" />
+              <a :href="orderByEmail()" class="btn btn--primary flex-grow">
                 Bestel via e-mail
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -93,23 +90,55 @@ export default {
   data() {
     return {
       price: null,
+      numberOfProducts: null,
+      productOptionTitle: null,
     }
   },
   computed: {
     cloudName() {
       return process.env.cloudinaryCloudName
     },
+    productTitle() {
+      return this.product.title
+    },
   },
   mounted() {
     this.product.productOptions.forEach((item) => {
       if (item.checked) {
         this.price = item.price
+        this.productOptionTitle = item.title
       }
     })
   },
   methods: {
     changeOption(event) {
       this.price = event.target.value
+    },
+    getNumberOfProducts(payload) {
+      this.numberOfProducts = payload
+    },
+    moneyFormat(amount) {
+      const price = new Intl.NumberFormat('nl-NL', {
+        style: 'currency',
+        currency: 'EUR',
+      })
+      return price.format(amount)
+    },
+    orderByEmail() {
+      const email = 'info@daisybakes.nl'
+      const subject = encodeURIComponent(`Bestelling voor ${this.productTitle}`)
+      const body = encodeURIComponent(
+        `Ik wil graag het volgende bestellen:
+${this.numberOfProducts}X ${this.productTitle}, ${this.productOptionTitle}
+Prijs is ${this.numberOfProducts} x ${this.moneyFormat(
+          this.price
+        )} = ${this.moneyFormat(
+          Number(this.numberOfProducts) * Number(this.price)
+        )}
+      `
+      )
+
+      return `mailto:${email}?subject=${subject}&body=${body}`
     },
   },
 }

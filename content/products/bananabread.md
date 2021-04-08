@@ -1,11 +1,11 @@
 ---
 id: bananenbrood_nbsdnc
-title: Healthy & Delicious Bananabread
+title: Healthy and Delicious Bananabread
 image: https://res.cloudinary.com/daisybakes/image/upload/v1617434488/bananenbrood_nbsdnc.jpg
 slug: bananabread
 productOptions:
   - title: 16,5 cm x 5,5 cm
-    price: 7,50
+    price: 7.50
     checked: false
   - title: 20 cm x 10 cm
     price: 15
