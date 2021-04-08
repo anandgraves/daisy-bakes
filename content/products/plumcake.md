@@ -6,13 +6,13 @@ imageGravity: south
 slug: plum-cake
 productOptions:
   - title: Ø 10 cm
-    price: 12,50
+    price: 12.50
     checked: false
   - title: Ø 18 cm
     price: 25
     checked: true
   - title: Ø 28 cm
-    price: 37,50
+    price: 37.50
     checked: false
 ---
 

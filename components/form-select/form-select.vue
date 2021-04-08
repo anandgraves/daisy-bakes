@@ -3,7 +3,7 @@
     <select
       class="select__input form-control"
       name="selectThis"
-      @change="changeOption($event)"
+      @change="$emit('change', $event.target.value)"
     >
       <option value="" selected disabled>Aantal</option>
       <option v-for="item in 10" :key="item" :value="item">{{ item }}</option>
@@ -22,16 +22,6 @@
     </svg>
   </div>
 </template>
-
-<script>
-export default {
-  methods: {
-    changeOption(event) {
-      console.log(event.target.value)
-    },
-  },
-}
-</script>
 
 <style lang="scss">
 @import 'form-select';

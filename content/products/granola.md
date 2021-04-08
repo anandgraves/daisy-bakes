@@ -4,11 +4,11 @@ title: Nutty Cacao Granola
 image: https://res.cloudinary.com/daisybakes/image/upload/v1617434529/granola_wj6rnv.jpg
 slug: granola
 productOptions:
-  - title: 250gr
+  - title: 250 gram
     price: 5
     checked: false
-  - title: 500gr
-    price: 9,50
+  - title: 500 gram
+    price: 9.50
     checked: true
 ---
 
