@@ -1,20 +1,21 @@
 <template>
-  <section class="testimonial position-relative z-index-1 padding-y-xxl">
+  <section class="testimonial position-relative z-index-1">
     <div class="container max-width-adaptive-sm">
       <figure
         class="flex justify-center margin-bottom-md reveal-fx reveal-fx--scale"
       >
         <img
+          v-if="photoUrl"
           class="block width-xxl height-xxl radius-50% border border-bg border-2 shadow-sm"
-          src="/images/daisy.jpg"
+          :src="photoUrl"
           alt="Testimonial picture"
         />
       </figure>
       <div class="testimonial__block-wrapper">
-        <blockquote class="text-lg text-center line-height-md margin-bottom-md">
-          Ik wil een klein beetje geluk en vrolijkheid meegeven aan jouw dag.
-          Jouw eigen genietmomentje.
-        </blockquote>
+        <blockquote
+          class="text-lg text-center line-height-md margin-bottom-md"
+          v-html="body"
+        ></blockquote>
         <svg
           class="icon icon--xxl color-contrast-higher opacity-10%"
           aria-hidden="true"
@@ -32,15 +33,40 @@
       </div>
       <div class="text-center">
         <p class="text-uppercase letter-spacing-md">
-          <strong>Daisy</strong>
+          <strong>{{ name }}</strong>
         </p>
-        <p class="color-contrast-medium margin-top-xxxxs">
-          Bakker bij Daisy Bakes
+        <p v-if="occupation" class="color-contrast-medium margin-top-xxxxs">
+          {{ occupation }}
         </p>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  props: {
+    body: {
+      type: String,
+      required: true,
+    },
+    name: {
+      type: String,
+      required: true,
+    },
+    occupation: {
+      type: String,
+      required: false,
+      default: '',
+    },
+    photoUrl: {
+      type: String,
+      required: false,
+      default: '',
+    },
+  },
+}
+</script>
 
 <style lang="scss">
 @import 'testimonial-single';

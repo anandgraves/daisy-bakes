@@ -3,7 +3,11 @@
     <div class="container">
       <h1 class="text-center margin-bottom-sm padding-top-sm">Producten</h1>
       <div class="product-overview__grid grid-every-layout aboveMin">
-        <div v-for="product in products" :key="product.id">
+        <div
+          v-for="product in products"
+          :key="product.id"
+          class="margin-bottom-xl"
+        >
           <nuxt-link
             :to="`/producten/${product.slug}`"
             class="product-overview__link"
@@ -29,6 +33,12 @@
           </nuxt-link>
         </div>
       </div>
+
+      <testimonial-single
+        body="Ik heb alles van jou website mogen proeven en alles is perfect lekker."
+        name="Oosie"
+        class="padding-y-lg"
+      />
     </div>
   </article>
 </template>
@@ -63,7 +73,6 @@ export default {
 .product-overview__title {
   margin-top: 0.5rem;
   text-align: center;
-  margin-bottom: 1.5rem;
 }
 
 .product-overview__link {

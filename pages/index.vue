@@ -1,7 +1,13 @@
 <template>
   <div>
     <feature-v12 />
-    <testimonial-single />
+    <testimonial-single
+      body="Ik wil een klein beetje geluk en vrolijkheid meegeven aan jouw dag.
+          Jouw eigen genietmomentje."
+      name="Daisy"
+      photo-url="/images/daisy.jpg"
+      class="padding-y-xxl"
+    />
 
     <div class="container max-width-adaptive-md">
       <div class="margin-bottom-lg">
@@ -119,42 +125,16 @@
         </div>
       </div>
     </section>
-    <section class="testimonial position-relative z-index-1 margin-y-xxl">
-      <div class="container max-width-adaptive-sm">
-        <div class="testimonial__block-wrapper">
-          <blockquote
-            class="text-lg text-center line-height-md margin-bottom-md"
-          >
-            Wat uit de keuken van DaisyBakes komt, zijn kort gezegd
-            ontdekkingsreizen met smaken die perfect in balans zijn. Hier moet
-            je echt even voor gaan zitten, enorm van genieten en rustig op je
-            laten inwerken.
-          </blockquote>
-          <svg
-            class="icon icon--xxl color-contrast-higher opacity-10%"
-            aria-hidden="true"
-            viewBox="0 0 64 64"
-          >
-            <polygon
-              fill="currentColor"
-              points="2 36 17 2 26 2 15 36 26 36 26 62 2 62 2 36"
-            />
-            <polygon
-              fill="currentColor"
-              points="38 36 53 2 62 2 51 36 62 36 62 62 38 62 38 36"
-            />
-          </svg>
-        </div>
-        <div class="text-center">
-          <p class="text-uppercase letter-spacing-md">
-            <strong>Léon van Schie</strong>
-          </p>
-        </div>
-      </div>
-    </section>
+
+    <testimonial-single
+      body="Wat uit de keuken van DaisyBakes komt, zijn kort gezegd ontdekkingsreizen met smaken die perfect in balans zijn. Hier moet je echt even voor gaan zitten, enorm van genieten en rustig op je laten inwerken."
+      name="Léon van Schie"
+      class="margin-bottom-xxl"
+    />
+
     <section class="padding-y-xxl bg-accent-dark text-center">
       <div class="container max-width-xs">
-        <h2 class="margin-bottom-sm">Verbeter jouw Kookvaardigheden</h2>
+        <h2 class="margin-bottom-md">Verbeter jouw Kookvaardigheden</h2>
         <p class="margin-bottom-md">
           Ik houd je op de hoogte van kortingen, tips en recepten. <br />
           Schrijf je in en ontvang <strong>nu 10% korting</strong> op je eerste

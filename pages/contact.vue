@@ -14,7 +14,8 @@
 
       <p>
         Je kunt mij ook bereiken via
-        <a href="https://instagram.com/daisybakes.nl">Instagram</a>.
+        <a href="https://instagram.com/daisybakes.nl">Instagram</a>, waar je nog
+        meer Daisy Bakes' creaties kunt bekijken.
       </p>
     </div>
   </article>
