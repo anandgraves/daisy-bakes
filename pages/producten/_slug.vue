@@ -34,8 +34,7 @@
               <p class="text-xl font-bold">{{ moneyFormat(price) }}</p>
             </div>
 
-            <div class="margin-bottom-md">
-              <p class="sr-only">Select size:</p>
+            <div v-if="showProductOptions" class="margin-bottom-md">
               <button-group class="gap-xs btns--radio">
                 <div
                   v-for="(item, index) in product.productOptions"
@@ -92,6 +91,7 @@ export default {
       price: null,
       numberOfProducts: null,
       productOptionTitle: null,
+      showProductOptions: true,
     }
   },
   computed: {
@@ -104,6 +104,13 @@ export default {
   },
   mounted() {
     this.product.productOptions.forEach((item) => {
+      if (this.product.productOptions.length === 1) {
+        this.price = item.price
+        this.productOptionTitle = item.title
+        this.showProductOptions = false
+        return
+      }
+
       if (item.checked) {
         this.price = item.price
         this.productOptionTitle = item.title
@@ -129,7 +136,9 @@ export default {
       const subject = encodeURIComponent(`Bestelling voor ${this.productTitle}`)
       const body = encodeURIComponent(
         `Ik wil graag het volgende bestellen:
-${this.numberOfProducts}X ${this.productTitle}, ${this.productOptionTitle}
+${this.numberOfProducts}X ${this.productTitle}${
+          this.productOptionTitle ? ', ' + this.productOptionTitle : ''
+        }
 Prijs is ${this.numberOfProducts} x ${this.moneyFormat(
           this.price
         )} = ${this.moneyFormat(
