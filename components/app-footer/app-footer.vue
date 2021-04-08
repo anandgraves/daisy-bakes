@@ -448,6 +448,11 @@
               >
             </li>
             <li>
+              <nuxt-link to="/producten/goodies-box" class="main-footer__link"
+                >Little Goodies Box</nuxt-link
+              >
+            </li>
+            <li>
               <nuxt-link to="/producten/friandises" class="main-footer__link"
                 >Friandises</nuxt-link
               >
