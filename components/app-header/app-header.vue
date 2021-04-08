@@ -3,12 +3,13 @@
     <div class="f-header__mobile-content container max-width-lg">
       <nuxt-link to="/" class="f-header__logo">
         <svg
-          class="app-header__logo"
-          width="289"
-          height="288"
+          class="f-header__logo-icon"
+          width="189"
+          height="188"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 289.93 288.22"
+          viewBox="60 40 350 349"
+          preserveAspectRatio="xMidYMin slice"
         >
           <style type="text/css">
             .logo-light-title-mobile {
@@ -173,12 +174,12 @@
         <div class="f-header__nav-logo-wrapper flex-grow flex-basis-0">
           <nuxt-link to="/" class="f-header__logo">
             <svg
-              class="app-header__logo"
               width="289"
               height="288"
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 289.93 288.22"
+              viewBox="60 31 389.93 388.22"
+              preserveAspectRatio="xMidYMin slice"
             >
               <style type="text/css">
                 .logo-light-title-tablet-and-up {

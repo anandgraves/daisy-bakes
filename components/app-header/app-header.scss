@@ -40,13 +40,13 @@ Usage: codyhouse.co/license
 
 .f-header__logo {
   display: inline-block;
-  width: var(--f-header-logo-width);
   flex-shrink: 0;
   text-decoration: none;
 
   svg,
   img {
     display: block;
+    height: var(--f-header-height);
   }
 }
 

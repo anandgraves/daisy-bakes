@@ -415,7 +415,7 @@
         <div class="text-xl text-center text-bold">Trek in iets lekkers?</div>
         <div class="text-lg text-center">
           <a
-            href="mailto:info@daisybakes.nl?subject=Ik heb trek in iets lekkers"
+            href=" mailto:info@daisybakes.nl?subject=Ik%20heb%20trek%20in%20iets%20lekkers"
             >Stuur mij een e-mail :-)</a
           >
         </div>
