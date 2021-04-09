@@ -10,6 +10,7 @@ productOptions:
   - title: 10 stuks Medium
     price: 22
     checked: false
+shortDescription: Friandises zijn heerlijke Franse kleine cakejes, het zijn little bundles of happiness.
 ---
 
 Friandises zijn heerlijke Franse kleine cakejes, het zijn little bundles of happiness. De originele zijn gemaakt met een hart van framboos maar er zijn ook andere smaken beschikbaar zoals met bosbessen, kaneel of pistache. Informeer naar de mogelijkheden.

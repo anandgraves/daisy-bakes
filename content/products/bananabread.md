@@ -13,6 +13,7 @@ productOptions:
   - title: 30 cm x 20 cm
     price: 35
     checked: false
+shortDescription: Gemaakt van o.a. volkoren- en amandelmeel, naar keuze gevuld met walnoten, bosbessen, pure chocolade en rum.
 ---
 
 Mijn bananenbrood wordt gemaakt van o.a. volkoren- en amandelmeel, en naar keuze gevuld met walnoten, bosbessen, pure chocolade en met rum. Dit zorgt voor een langdurig verzadigd gevoel en met al die lekkere ingrediënten is suiker hierin verwerken niet nodig.

@@ -10,6 +10,7 @@ productOptions:
   - title: 500 gram
     price: 9.50
     checked: true
+shortDescription: Huisgemaakte granola met veel cacao, lekkere noten en diverse superfoods.
 ---
 
 Deze huisgemaakte granola is een gezond alternatief voor cruesli. Hij wordt gemaakt met veel lekkere noten en verschillende (vooral lekkere) superfoods.

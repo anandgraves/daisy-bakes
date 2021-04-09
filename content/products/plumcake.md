@@ -14,6 +14,7 @@ productOptions:
   - title: Ø 28 cm
     price: 37.50
     checked: false
+shortDescription: Gemaakt met in rum gemarineerde pruimen en natuurlijk amandelmeel. Een aromatische cake die ondanks zijn voorkomen heerlijk luchtig is.
 ---
 
 Met deze cake zul je jezelf en je gasten zeker verwennen. Gemaakt met in rum gemarineerde pruimen en natuurlijk amandelmeel. Een aromatische cake die ondanks zijn voorkomen heerlijk luchtig is.

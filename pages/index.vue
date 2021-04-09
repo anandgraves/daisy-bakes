@@ -150,6 +150,17 @@
 
 <script>
 export default {
+  head: {
+    title: 'Daisy Bakes | Homemade Feel-Good Lekkernijen',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Huisgemaakte lekkernijen die je niet kunt weerstaan. Proberen?',
+      },
+    ],
+  },
   computed: {
     cloudName() {
       return process.env.cloudinaryCloudName
