@@ -48,7 +48,7 @@ export default {
       {
         rel: 'mask-icon',
         href: `/safari-pinned-tab.svg?v=${urlHash}`,
-        color: '#000000',
+        color: '#edd9c7',
       },
       {
         rel: 'icon',
