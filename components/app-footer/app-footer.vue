@@ -454,20 +454,10 @@
         </nav>
       </div>
 
-      <div
-        class="flex flex-column border-top padding-y-xs margin-top-lg flex-row@md justify-between@md items-center@md"
-      >
-        <div class="margin-bottom-sm margin-bottom-0@md">
-          <div
-            class="text-sm text-xs@md color-contrast-medium flex flex-wrap gap-xs"
-          >
-            <a href="#0" class="color-contrast-high">Terms</a>
-            <a href="#0" class="color-contrast-high">Privacy</a>
-          </div>
-        </div>
-
-        <div class="flex items-center gap-xs">
+      <div class="padding-y-xs margin-top-md">
+        <div class="text-center">
           <a
+            class="inline-block"
             href="https://instagram.com/daisybakes.nl"
             target="_blank"
             rel="noreferrer noopener"
