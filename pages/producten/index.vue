@@ -1,7 +1,7 @@
 <template>
   <article class="product-overview padding-bottom-xl">
     <div class="container">
-      <h1 class="text-center margin-bottom-sm padding-top-sm">Producten</h1>
+      <h1 class="text-center margin-bottom-md padding-top-sm">Producten</h1>
       <div class="product-overview__grid grid-every-layout aboveMin">
         <div
           v-for="product in products"

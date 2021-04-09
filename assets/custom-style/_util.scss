@@ -17,3 +17,15 @@
 //     }
 //   }
 // }
+
+.list-paragraphs {
+  list-style-type: square;
+}
+
+.list-paragraphs--lg {
+  padding-left: calc(1rem + var(--space-lg));
+}
+
+.list-paragraphs > * + * {
+  margin-top: var(--space-md);
+}
