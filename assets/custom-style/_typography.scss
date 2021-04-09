@@ -10,7 +10,7 @@
 
   // font size
   --text-base-size: 1em; // body font-size
-  --text-scale-ratio: 1.2; // multiplier used to generate the type scale values 👇
+  --text-scale-ratio: 1.2; // multiplier used to generate the type scale values
 
   // line-height
   --body-line-height: 1.4;
@@ -25,6 +25,11 @@
 
 :root,
 * {
+  // rendering
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
   // type scale
   --text-xs: calc(
     (var(--text-unit) / var(--text-scale-ratio)) / var(--text-scale-ratio)
