@@ -29,9 +29,11 @@
             <div class="margin-bottom-xs">
               <h1>{{ productTitle }}</h1>
             </div>
-            <div class="text-component v-space-md margin-y-md">
-              <nuxt-content :document="product" />
-              <p class="text-xl font-bold">{{ moneyFormat(price) }}</p>
+            <div class="v-space-md margin-y-md">
+              <nuxt-content :document="product" class="text-component" />
+              <p class="margin-y-md text-xl font-bold">
+                {{ moneyFormat(price) }}
+              </p>
             </div>
 
             <div v-if="showProductOptions" class="margin-bottom-md">
@@ -54,12 +56,37 @@
                 </div>
               </button-group>
             </div>
+
             <div class="flex gap-xs">
               <label class="form-label sr-only" for="qtyInput">Quantity:</label>
               <form-select @change="getNumberOfProducts($event)" />
               <a :href="orderByEmail()" class="btn btn--primary flex-grow">
                 Bestel via e-mail
               </a>
+            </div>
+
+            <div class="bg-contrast-lower margin-top-xl">
+              <ul
+                class="padding-xl text-sm list-paragraphs list-paragraphs--lg"
+              >
+                <li>
+                  Lekkers van Daisy Bakes is af te halen in Almere of kan tegen
+                  een kleine vergoeding bezorgd worden in omgeving Almere /
+                  Amsterdam.
+                </li>
+                <li>
+                  Fijn weetje, al het lekkers is gemaakt met o.a. amandelmeel en
+                  roomboter.
+                </li>
+                <li>
+                  Op aanvraag kan Daisy Bakes haar lekkers glutenvrij en
+                  suikervrij maken.
+                </li>
+                <li>
+                  NB: DaisyBakes houdt rekening met de RIVM richtlijnen bij
+                  leveren of afhalen van haar producten.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
