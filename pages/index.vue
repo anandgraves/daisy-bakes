@@ -81,7 +81,9 @@
         >
       </div>
     </div>
-    <section class="position-relative z-index-1 margin-y-xxl">
+    <section
+      class="position-relative z-index-1 margin-top-xxxl margin-bottom-xl"
+    >
       <div class="container max-width-adaptive-xl">
         <div class="grid">
           <div class="bg-contrast-lower flex items-center col-6@md order-2@md">

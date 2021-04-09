@@ -1,12 +1,11 @@
 <template>
   <footer
-    class="main-footer position-relative z-index-1 padding-top-xl padding-bottom-md bg-contrast-lower"
+    class="app-footer position-relative z-index-1 padding-top-xl padding-bottom-md bg-contrast-lower"
   >
     <div class="container max-width-lg">
       <div class="text-center">
         <nuxt-link to="/" class="f-header__logo text-center margin-bottom-md">
           <svg
-            class="app-header__logo"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 289.93 288.22"
@@ -415,9 +414,11 @@
         <div class="text-xl text-center text-bold">Trek in iets lekkers?</div>
         <div class="text-lg text-center">
           <a
+            class="app-footer__email-link"
             href=" mailto:info@daisybakes.nl?subject=Ik%20heb%20trek%20in%20iets%20lekkers"
-            >Stuur mij een e-mail :-)</a
+            >Stuur mij een e-mail</a
           >
+          :-)
         </div>
       </div>
 
@@ -426,36 +427,28 @@
         <nav class="margin-top-xs">
           <ul class="grid gap-xs text-center text-sm@md">
             <li>
-              <nuxt-link to="/producten/granola" class="main-footer__link"
-                >Nutty Cacao Granola</nuxt-link
-              >
+              <nuxt-link to="/producten/granola">Nutty Cacao Granola</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/producten/bananabread" class="main-footer__link"
+              <nuxt-link to="/producten/bananabread"
                 >Delicious Banana Bread</nuxt-link
               >
             </li>
             <li>
-              <nuxt-link
-                to="/producten/chocolate-cake"
-                class="main-footer__link"
+              <nuxt-link to="/producten/chocolate-cake"
                 >Chocolate Indulgence Cake</nuxt-link
               >
             </li>
             <li>
-              <nuxt-link to="/producten/plum-cake" class="main-footer__link"
-                >Drunken Plum Cake</nuxt-link
-              >
+              <nuxt-link to="/producten/plum-cake">Drunken Plum Cake</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/producten/goodies-box" class="main-footer__link"
+              <nuxt-link to="/producten/goodies-box"
                 >Little Goodies Box</nuxt-link
               >
             </li>
             <li>
-              <nuxt-link to="/producten/friandises" class="main-footer__link"
-                >Friandises</nuxt-link
-              >
+              <nuxt-link to="/producten/friandises">Friandises</nuxt-link>
             </li>
           </ul>
         </nav>
@@ -476,7 +469,6 @@
         <div class="flex items-center gap-xs">
           <a
             href="https://instagram.com/daisybakes.nl"
-            class="main-footer__social"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -497,3 +489,10 @@
     </div>
   </footer>
 </template>
+
+<style>
+.app-footer__email-link {
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+</style>
