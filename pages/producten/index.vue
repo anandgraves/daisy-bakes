@@ -52,6 +52,16 @@ export default {
       products,
     }
   },
+  head: {
+    title: 'Producten | Daisy Bakes',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Alle huisgemaakte lekkernijen van Daisy Bakes.',
+      },
+    ],
+  },
   computed: {
     cloudName() {
       return process.env.cloudinaryCloudName

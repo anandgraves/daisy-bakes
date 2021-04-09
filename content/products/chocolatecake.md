@@ -13,6 +13,7 @@ productOptions:
   - title: Ø 28 cm
     price: 40
     checked: false
+shortDescription: Deze chocolade taart smelt in je mond en wordt afgemaakt met frisse slagroom en verse vruchten.
 ---
 
 Deze chocolade taart smelt in je mond en wordt afgemaakt met frisse slagroom en verse vruchten. Gemaakt met amandelmeel en heel veel pure chocolade is dit echt een feestelijke taart. Deze Chocolate Indulgence Cake wordt gemaakt zonder bloem, dus past prima in een glutenvrij dieet.

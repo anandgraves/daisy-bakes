@@ -7,6 +7,7 @@ productOptions:
   - title:
     price: 17.50
     checked: false
+shortDescription: De Little Goodies Box bestaat uit al mijn producten. Dan kun je gemakkelijk uitzoeken welke jouw favoriet is.
 ---
 
 Weet je nog niet welke je moet kiezen of welke het lekkerst is? Daar heb ik wat op bedacht.

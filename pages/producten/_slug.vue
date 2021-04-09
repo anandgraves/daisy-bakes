@@ -121,6 +121,18 @@ export default {
       showProductOptions: true,
     }
   },
+  head() {
+    return {
+      title: `${this.productTitle} | Producten | Daisy Bakes`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.product.shortDescription,
+        },
+      ],
+    }
+  },
   computed: {
     cloudName() {
       return process.env.cloudinaryCloudName

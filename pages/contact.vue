@@ -21,6 +21,21 @@
   </article>
 </template>
 
+<script>
+export default {
+  head: {
+    title: 'Contact | Daisy Bakes',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Trek in iets lekkers?',
+      },
+    ],
+  },
+}
+</script>
+
 <style lang="scss">
 .newsletter-page {
   background-color: var(--color-accent);

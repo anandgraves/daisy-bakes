@@ -22,6 +22,21 @@
   </article>
 </template>
 
+<script>
+export default {
+  head: {
+    title: 'Nieuwsbrief | Daisy Bakes',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Schrijf je in en ontvang kortingen, tips en recepten.',
+      },
+    ],
+  },
+}
+</script>
+
 <style lang="scss">
 .newsletter-page {
   background-color: var(--color-accent);

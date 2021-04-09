@@ -34,6 +34,8 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     '@nuxtjs/style-resources',
+    // https: //pwa.nuxtjs.org
+    '@nuxtjs/pwa',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -43,6 +45,20 @@ export default {
     // https://cloudinary.nuxtjs.org
     '@nuxtjs/cloudinary',
   ],
+
+  pwa: {
+    manifest: {
+      name: 'Daisy Bakes',
+      short_name: 'Daisy Bakes',
+      lang: 'nl',
+      theme_color: '#EDD9C7',
+      description: 'Homemade Feel-Good Lekkernijen :-)',
+      orientation: 'portrait',
+    },
+    icon: {
+      source: 'static/favicons/icon.png',
+    },
+  },
 
   cloudinary: {
     cloudName: process.env.CLOUDINARY_CLOUDNAME,
