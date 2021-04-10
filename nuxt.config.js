@@ -41,6 +41,10 @@ export default {
         href: 'https://res.cloudinary.com',
       },
       {
+        rel: 'author',
+        href: 'humans.txt',
+      },
+      {
         rel: 'shortcut icon',
         type: 'image/x-icon',
         href: `/favicon.ico?v=${urlHash}`,

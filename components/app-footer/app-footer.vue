@@ -454,7 +454,7 @@
         </nav>
       </div>
 
-      <div class="padding-y-xs margin-top-md">
+      <div class="padding-y-xs margin-y-md">
         <div class="text-center">
           <a
             class="inline-block"
@@ -463,7 +463,7 @@
             rel="noreferrer noopener"
           >
             <svg
-              class="icon block"
+              class="icon block app-footer__social-icon"
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -476,6 +476,15 @@
           </a>
         </div>
       </div>
+      <div class="text-sm text-center">
+        Website door
+        <a
+          href="https://anandgraves.nl/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Anand Graves</a
+        >
+      </div>
     </div>
   </footer>
 </template>
@@ -484,5 +493,10 @@
 .app-footer__email-link {
   text-decoration: none;
   border-bottom: 1px solid currentColor;
+}
+
+.app-footer__social-icon {
+  width: 1.8rem;
+  height: 1.8rem;
 }
 </style>
