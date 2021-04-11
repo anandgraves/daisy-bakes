@@ -1,13 +1,12 @@
 <template>
   <article class="newsletter-page padding-top-lg padding-bottom-xxl">
     <div class="container max-width-xs">
-      <h1 class="text-center">Verbeter jouw Kookvaardigheden</h1>
+      <h1 class="text-center">Nieuwsbrief</h1>
       <form class="margin-top-xl">
         <div class="text-component text-center">
           <p class="margin-bottom-xs">
-            Ik houd je op de hoogte van kortingen, tips en recepten. <br />
-            Schrijf je in en ontvang <strong>nu 10% korting</strong> op je
-            eerste aankoop.
+            Schrijf je in en ik houd je op de hoogte van seasonal goodies,
+            nieuws en acties!
           </p>
         </div>
 
