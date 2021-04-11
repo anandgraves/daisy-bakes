@@ -8,13 +8,6 @@
 </template>
 
 <script>
-let animMenuButton, flexiAppHeader
-if (process.client) {
-  animMenuButton = () =>
-    import('../components/anim-menu-button/anim-menu-button')
-  flexiAppHeader = () => import('../components/app-header/flexi-header')
-}
-
 export default {
   name: 'DefaultLayout',
   mounted() {
@@ -34,10 +27,7 @@ export default {
     document.getElementById('js-app-header').remove()
   },
   methods: {
-    onScriptLoaded(event = null) {
-      animMenuButton()
-      flexiAppHeader()
-    },
+    onScriptLoaded(event = null) {},
   },
 }
 </script>
