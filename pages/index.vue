@@ -4,8 +4,7 @@
     <testimonial-single
       body="Ik wil een klein beetje geluk en vrolijkheid meegeven aan jouw dag.
           Jouw eigen genietmomentje."
-      name="Daisy"
-      photo-url="/images/daisy.jpg"
+      name="Daisy Bakes"
       class="padding-y-xxl"
     />
 
@@ -136,11 +135,10 @@
 
     <section class="padding-y-xxl bg-accent-dark text-center">
       <div class="container max-width-xs">
-        <h2 class="margin-bottom-md">Verbeter jouw Kookvaardigheden</h2>
+        <h2 class="margin-bottom-md">Nieuwsbrief</h2>
         <p class="margin-bottom-md">
-          Ik houd je op de hoogte van kortingen, tips en recepten. <br />
-          Schrijf je in en ontvang <strong>nu 10% korting</strong> op je eerste
-          aankoop.
+          Schrijf je in en ik houd je op de hoogte van seasonal goodies, nieuws
+          en acties!
         </p>
         <newsletter-input />
       </div>
