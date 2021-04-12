@@ -5,7 +5,7 @@ image: https://res.cloudinary.com/daisybakes/image/upload/v1617434488/bananenbro
 slug: goodies-box
 productOptions:
   - title:
-    price: 17.50
+    price: 12.50
     checked: false
 shortDescription: De Little Goodies Box bestaat uit al mijn producten. Dan kun je gemakkelijk uitzoeken welke jouw favoriet is.
 ---
