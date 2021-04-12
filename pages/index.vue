@@ -40,7 +40,7 @@
               <client-only>
                 <cld-image
                   :cloud-name="cloudName"
-                  public-id="friandise-single_qgng10"
+                  public-id="friandises-set2_k0nj07"
                   fetchFormat="auto"
                   crop="fill"
                   aspectRatio="1.0"

@@ -6,7 +6,7 @@
       <div class="grid flex-center">
         <div class="col-10 col-5@md">
           <div class="feature-v12__offset-item text-center text-left@md">
-            <h1 class="text-xxxl@sm">
+            <h1 class="text-xxl@sm">
               Daisy Bakes maakt voor jou Homemade Feel-Good Lekkernijen.
             </h1>
             <div class="margin-top-sm">
@@ -25,7 +25,7 @@
                 <client-only>
                   <cld-image
                     :cloud-name="cloudName"
-                    public-id="friandises-set2_k0nj07"
+                    public-id="friandise-single_qgng10"
                     fetchFormat="auto"
                     aspectRatio="1.333"
                     crop="fill"
