@@ -108,7 +108,7 @@
               <client-only>
                 <cld-image
                   :cloud-name="cloudName"
-                  public-id="simona-sergi-RfUr5P6eVuY-unsplash_kclmzs"
+                  public-id="anh-tran-qPQqZ0y-rJ0-unsplash_zuf2z9"
                   aspect
                   fetchFormat="auto"
                   aspectRatio="1.0"
@@ -118,7 +118,7 @@
                   loading="lazy"
                   secure="true"
                   class="block width-100% height-100% object-cover order-1@md"
-                  alt="Photo by Simona Sergi on https://unsplash.com/@i_am_simoesse"
+                  alt="Photo by Anh Tran on https://unsplash.com/@anhtran_photography"
                 />
               </client-only>
             </div>
