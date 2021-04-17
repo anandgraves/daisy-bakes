@@ -430,7 +430,7 @@
               <nuxt-link to="/producten/granola">Nutty Cacao Granola</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/producten/bananabread"
+              <nuxt-link to="/producten/banana-bread"
                 >Delicious Banana Bread</nuxt-link
               >
             </li>
