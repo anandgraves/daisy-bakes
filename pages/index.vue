@@ -1,6 +1,11 @@
 <template>
   <div>
-    <feature-v12 />
+    <feature-v12
+      title="Daisy Bakes maakt voor jou Homemade Feel-Good Lekkernijen."
+      image-id="friandise-single_qgng10"
+      cta-text="Neem een kijkje"
+      link-to="/producten"
+    />
     <testimonial-single
       body="Ik wil een klein beetje geluk en vrolijkheid meegeven aan jouw dag.
           Jouw eigen genietmomentje."
