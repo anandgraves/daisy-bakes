@@ -7,13 +7,13 @@
         <div class="col-10 col-5@md">
           <div class="feature-v12__offset-item text-center text-left@md">
             <h1 class="text-xxl@sm">
-              Daisy Bakes maakt voor jou Homemade Feel-Good Lekkernijen.
+              {{ title }}
             </h1>
-            <div class="margin-top-sm">
+            <div v-if="linkTo" class="margin-top-sm">
               <div class="flex flex-wrap gap-sm items-center margin-x-auto">
-                <nuxt-link to="/producten" class="btn btn--primary"
-                  >Neem Een Kijkje</nuxt-link
-                >
+                <nuxt-link to="/producten" class="btn btn--primary">{{
+                  ctaText
+                }}</nuxt-link>
               </div>
             </div>
           </div>
@@ -21,22 +21,25 @@
         <div class="col-7@md">
           <figure class="feature-v12__bg-item">
             <div class="frame frame43">
-              <nuxt-link to="/producten">
-                <client-only>
-                  <cld-image
-                    :cloud-name="cloudName"
-                    public-id="friandise-single_qgng10"
-                    fetchFormat="auto"
-                    aspectRatio="1.333"
-                    crop="fill"
-                    responsive
-                    quality="65"
-                    loading="lazy"
-                    secure="true"
-                    class="block width-100%"
-                  />
-                </client-only>
-              </nuxt-link>
+              <nuxt-link
+                v-if="linkTo"
+                to="/producten"
+                class="feature-v12__img-link"
+              />
+              <client-only>
+                <cld-image
+                  :cloud-name="cloudName"
+                  :public-id="imageId"
+                  fetchFormat="auto"
+                  aspectRatio="1.333"
+                  crop="fill"
+                  responsive
+                  quality="65"
+                  loading="lazy"
+                  secure="true"
+                  class="block width-100%"
+                />
+              </client-only>
             </div>
           </figure>
         </div>
@@ -47,6 +50,26 @@
 
 <script>
 export default {
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    imageId: {
+      type: String,
+      required: true,
+    },
+    linkTo: {
+      type: String,
+      required: false,
+      default: '',
+    },
+    ctaText: {
+      type: String,
+      required: false,
+      default: '',
+    },
+  },
   computed: {
     cloudName() {
       return process.env.cloudinaryCloudName
