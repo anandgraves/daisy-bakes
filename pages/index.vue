@@ -142,8 +142,9 @@
       <div class="container max-width-xs">
         <h2 class="margin-bottom-md">Nieuwsbrief</h2>
         <p class="margin-bottom-md">
-          Schrijf je in en ik houd je op de hoogte van seasonal goodies, nieuws
-          en acties!
+          Ik houd je op de hoogte van seasonal goodies, nieuws en acties.
+          Schrijf je nu in en ontvang <strong>15% korting</strong> op je eerste
+          aankoop!
         </p>
         <newsletter-input />
       </div>

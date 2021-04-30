@@ -5,8 +5,9 @@
       <form class="margin-top-xl">
         <div class="text-component text-center">
           <p class="margin-bottom-xs">
-            Schrijf je in en ik houd je op de hoogte van seasonal goodies,
-            nieuws en acties!
+            Ik houd je op de hoogte van seasonal goodies, nieuws en acties.
+            Schrijf je nu in en ontvang <strong>15% korting</strong> op je
+            eerste aankoop!
           </p>
         </div>
 
