@@ -15,7 +15,7 @@
     "@nuxtjs/cloudinary": "^1.0.3-beta-3",
     "codyhouse-framework": "^2.8.6",
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.3"
+    "nuxt": "^3.4.3"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.0",
